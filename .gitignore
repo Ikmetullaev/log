@@ -1,0 +1,23 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# SQLite database
+log.db
+*.sqlite3
+
+# Environment variables
+.env
+
+# OS files
+*.log
+.DS_Store
+
+# IDE/project settings
+.vscode/
+.idea/
+*.code-workspace
+
+# System folders (safety)
+AppData/
+*.bak
