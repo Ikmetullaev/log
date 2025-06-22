@@ -4,6 +4,13 @@ from fastapi.templating import Jinja2Templates
 from datetime import datetime
 import os
 
+from sqlalchemy import Column, Integer, String, DateTime, create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, Session
+from datetime import datetime
+import requests
+
+
 from database import get_db_connection, create_table
 from geo import get_geo_info
 
