@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foydalanuvchi loglari</title>
+</head>
+<body>
+    <h1>Loglar</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>IP</th>
+            <th>Port</th>
+            <th>Method</th>
+            <th>Path</th>
+            <th>Country</th>
+            <th>Region</th>
+            <th>City</th>
+            <th>Time</th>
+        </tr>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log.id }}</td>
+            <td>{{ log.ip }}</td>
+            <td>{{ log.port }}</td>
+            <td>{{ log.method }}</td>
+            <td>{{ log.path }}</td>
+            <td>{{ log.country }}</td>
+            <td>{{ log.region }}</td>
+            <td>{{ log.city }}</td>
+            <td>{{ log.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
